@@ -9,6 +9,11 @@ interface MenuItem{
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styles: [
+    `
+    li {
+      cursor: pointer; 
+    }
+    ` 
   ]
 })
 export class MenuComponent  {
@@ -17,7 +22,7 @@ export class MenuComponent  {
     {ruta: '/graficas/barra', texto: 'Barras' }, 
     {ruta: '/graficas/barra-doble', texto: 'Barras Dobles' }, 
     {ruta: '/graficas/dona', texto: 'Dona' }, 
-    {ruta: '/graficas/barra-http', texto: 'Dona Http' }, 
+    {ruta: '/graficas/dona-http', texto: 'Dona Http' }, 
 
   ]
 }
